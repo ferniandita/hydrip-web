@@ -1,0 +1,285 @@
+.bg-grey1{
+	background-color: #222629;
+}
+.bg-grey2{
+	background-color: #474B4F;
+}
+.grey{
+	color: #6B6E70;
+}
+.green{
+	color: #86C232;
+}
+.white{
+	color: #FFFFFF;
+}
+body{
+	margin: 0;
+	font-family: 'Roboto';
+}
+.topnav img{
+	height: 75px;
+	margin-top: 5px;
+	float: left;
+	margin-right: 0.5%;
+	margin-left: 1%;
+}
+.topnav {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+.topnav a {
+	float: left;
+	display: block;
+	color: #6B6E70;
+	text-align: center;
+	padding: 26px 50px;
+	text-decoration: none;
+	font-size: 20px;
+	border-bottom: 3px solid transparent;
+}
+.topnav a:hover {
+	color: #86C232;
+}
+.topnav a.active {
+	border-bottom: 3px solid #86C232;
+	color: #86C232;
+}
+.topnav h1{
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding-left: 220px;
+	padding-right: 225px;
+	text-decoration: none;
+	border-bottom: 3px solid #86C232;
+}
+.button{
+	width: 100px;
+	height: 40px;
+	margin-top: 17.5px;
+	float: right;
+	margin-right: 3%;
+	background-color: #86C232;
+	color: #FFFFFF;
+	border: 0px solid transparent;
+}
+.button:hover{
+	border: 3px solid white;
+}
+/* Float four columns side by side */
+.column {
+	float: left;
+	width: 30%;
+	padding: 0 0.9%;
+}
+/* Remove extra left and right margins, due to padding */
+.row {
+	/*margin: 0 -5px;*/
+	padding-top: 100px;
+	width: 100%;
+	margin-left: 2.25%;
+}
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.row2 {
+	/*margin: 0 -5px;*/
+	padding-top: 100px;
+	width: 100%;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+/* Style the counter cards */
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+	/*border-radius: 3px;*/
+}
+.card2 {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+	color: #FFFFFF;
+	width: 97.5%;
+	padding-bottom: 15px;
+	/*border-radius: 3px;*/
+}
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+.title{
+	padding-top: 7.5px;
+	padding-bottom: 5px;
+	width: 100%;
+	border-bottom: 2px solid #86C232;
+}
+.title h3{
+	color: #86C232;
+}
+.content{
+	border-bottom: 1px solid #6B6E70;
+	/*	padding-top: 20px;*/
+}
+.content p{
+	text-align: left;
+	margin-left: 15px;
+}
+table{
+	/*width: 350px;*/
+	text-align: center;
+	/*border: 1px solid;*/
+}
+.content th{
+	font-weight: normal;
+	/*border: 1px solid;*/
+}
+th{
+	/*border: 1px solid;*/
+}
+td{
+	color: #86C232;
+	/*border: 1px solid;*/
+}
+.divauto{
+	border-bottom: 1px solid #6B6E70;
+}
+.divauto table{
+	text-align: left;
+/*	border: 1px solid;*/
+}
+.divauto td{
+	color: #FFFFFF;
+	/*border: 1px solid;*/
+}
+.divmanual{
+}
+.divmanual table{
+	text-align: left;
+	/*border: 1px solid;*/
+}
+.divmanual td{
+	color: #FFFFFF;
+	padding-top: 30px;
+	/*border: 1px solid;*/
+}
+.switch {
+	float: right;
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 25px;
+}
+
+.switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #888;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3.5px;
+	background-color: #fff;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+input:checked + .slider {
+	background-color: #86C232;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #86C232;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+input:disabled + .slider{
+	background-color: #333;
+}
+
+input:disabled + .slider:before{
+	background-color: #666;
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 50px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+#input {
+	width: 100px;
+	height: 25px;
+	border-color: transparent;
+	background-color: white;
+	float: right;
+	margin-right: 25px;
+	font-size: 17.5px;
+}
+#input2 {
+	width: 100px;
+	height: 25px;
+	border-color: transparent;
+	background-color: white;
+	font-size: 17.5px;
+}
+#submit{
+	width: 100px;
+	height: 35px;
+	float: left;
+	margin-left: 382px;
+	background-color: #86C232;
+	color: #FFFFFF;
+	border: 0px solid transparent;
+	font-size: 17.5px;
+}
+#text {
+	text-align: left;
+	padding-left: 25px;
+}
+#keterangan {
+	margin-top: 25px;
+	margin-left: 25px;
+}
+#keterangan td {
+	text-align: left;
+	color: white;
+}
+#ket{
+	padding-right: 50px;
+}
